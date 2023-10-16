@@ -1,24 +1,38 @@
-```
-create database curso;
-use curso;
 
-CREATE TABLE minha_tabela (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(50),
-    sobrenome VARCHAR(50),
-    idade INT,
-    email VARCHAR(100),
-    telefone VARCHAR(20),
-    data_nascimento DATE
+
+```
+
+
+create table minha_tabela(
+id int primary key auto_increment,
+nome varchar(50),
+sobrenome varchar(50),
+idade int,
+email varchar(100),
+telefone varchar(20),
+data_nasc date
 );
 
-INSERT INTO minha_tabela (id, nome, sobrenome, idade, email, telefone, data_nascimento)
-VALUES (1, 'João', 'Silva', 30, 'joao.silva@email.com', '(11) 9999-9999', '1990-01-01');
-
-INSERT INTO minha_tabela ( nome, sobrenome, idade, email, telefone, data_nascimento)
-VALUES ('Maria', 'Santos', 25, 'maria.santos@email.com', '(11) 8888-8888', '1995-05-05');
+insert into minha_tabela(nome, sobrenome, idade, email, telefone, data_nasc) 
+values ("Junior", "Silva", 15, "junior@gmail.comn",'(31) 9999-9999','1995-05-05');
 
 
-select nome,idade,telefone from minha_tabela;
+insert into minha_tabela(nome, sobrenome, idade, email, telefone, data_nasc) 
+values ("Paulo", "Souza", 40, "paulo@gmail.comn",'(31) 8888-9999','1980-05-05');
+
+
+insert into minha_tabela (nome, sobrenome, idade, email, telefone, data_nasc)
+values 
+   ("Sergio", "Silva", 15, "junior@gmail.comn",'(31) 9999-9999','1995-05-05'),
+   ("Alex", "Silva", 15, "junior@gmail.comn",'(31) 9999-9999','1995-05-05'), 
+   ("Marcelo", "Silva", 15, "junior@gmail.comn",'(31) 9999-9999','1995-05-05'),
+   ("Raphael", "Silva", 15, "junior@gmail.comn",'(31) 9999-9999','1995-05-05');
+
+
+
+select * from minha_tabela;
+
+
+
 
 ```
